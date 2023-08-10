@@ -1,0 +1,7 @@
+<h2>Info:</h2>
+<span>Name: <input [(ngModel)]="selectedChild.name" type="text"></span>
+<span>Wish: <input [(ngModel)]="selectedChild.wish" type="text"></span>
+<span>Is Nice:
+    <input [(ngModel)]="selectedChild.isNice" type="checkbox">
+</span>
+<button (click)="onSave.emit()">Save</button>
