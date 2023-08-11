@@ -1,5 +1,7 @@
-<h3>Children:</h3>
-<div *ngFor="let child of childList">
-    <button (click)="onSelect.emit(child)">{{ child.name }}</button>
-    <button (click)="onDelete.emit(child)">X</button>
+<div class="list">
+    <h3>Children:</h3>
+    <div *ngFor="let child of childList">
+        <button (click)="onSelect.emit(child)">{{ child.name }}</button>
+        <button class="delete" (click)="onDelete.emit(child)">X</button>
+    </div>
 </div>
