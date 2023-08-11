@@ -1,0 +1,8 @@
+<div class="menu">
+    <h2>Welcome Santa!</h2>
+    <button><a routerLink="/login">Logout</a></button>
+</div>
+<div class="main">
+    <app-list [childList]="santaList" (onSelect)="childSelected($event)" (onDelete)="deleteChild($event)"></app-list>
+    <app-detail [selectedChild]="currentChild" (onSave)="saveChild()"></app-detail>
+</div>
